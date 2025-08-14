@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editkaro.in - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Editkaro<span>.in</span></div>
+    <nav>
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="short">Short-form</button>
+      <button class="filter-btn" data-category="long">Long-form</button>
+      <button class="filter-btn" data-category="gaming">Gaming</button>
+      <button class="filter-btn" data-category="football">Football</button>
+      <button class="filter-btn" data-category="ads">eCommerce Ads</button>
+      <button class="filter-btn" data-category="documentary">Documentary</button>
+      <button class="filter-btn" data-category="anime">Anime</button>
+      <button class="filter-btn" data-category="color">Color Grading</button>
+    </nav>
+  </header>
+
+  <!-- Portfolio Grid -->
+  <main class="portfolio">
+    <!-- Example Video Card -->
+    <div class="video-card" data-category="short">
+      <video src="videos/sample1.mp4" muted></video>
+      <div class="overlay">
+        <h3>Short-form Video</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="long">
+      <video src="videos/sample2.mp4" muted></video>
+      <div class="overlay">
+        <h3>Long-form Video</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="gaming">
+      <video src="videos/sample3.mp4" muted></video>
+      <div class="overlay">
+        <h3>Gaming Video</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="football">
+      <video src="videos/sample4.mp4" muted></video>
+      <div class="overlay">
+        <h3>Football Edit</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="ads">
+      <video src="videos/sample5.mp4" muted></video>
+      <div class="overlay">
+        <h3>eCommerce Ad</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="documentary">
+      <video src="videos/sample6.mp4" muted></video>
+      <div class="overlay">
+        <h3>Documentary Style</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="anime">
+      <video src="videos/sample7.mp4" muted></video>
+      <div class="overlay">
+        <h3>Anime Video</h3>
+        <span>▶</span>
+      </div>
+    </div>
+
+    <div class="video-card" data-category="color">
+      <video src="videos/sample8.mp4" muted></video>
+      <div class="overlay">
+        <h3>Color Grading</h3>
+        <span>▶</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <video controls id="lightbox-video"></video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
